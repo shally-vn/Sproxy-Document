@@ -27,7 +27,7 @@
 /reset_all
 ```
 - Example : http://192.168.1.99:8000/api/v1/reset_all
-### Reboot USB by proxy , port :
+## Reboot USB by proxy , port :
 ### Reboot one USB
 - Method : `GET`
 ```
@@ -39,14 +39,14 @@
 /status?reboot_usb=all
 ```
 - Example : http://192.168.1.99:8000/api/v1/reboot_usb?proxy=all
-### Send SMS
+## Send SMS
 - Method : `GET`
 * Please url encode message data
 ```
 /send_sms?port={ip:port}&phone={number_phone}&message={sms_content}
 ```
 - Example : http://192.168.1.99:8000/api/v1/send_sms?port=192.168.1.99:5555&phone=+84987654321&message=HelloSproxy
-### Read SMS
+## Read SMS
 - Method : `GET`
 * Type:
   - Inbox : Type = `1` 
@@ -57,27 +57,27 @@
 /read_sms?port={ip:port}&type={1|2|3}&page={number}
 ```
 - Example : http://192.168.1.99:8000/api/v1/read_sms?port=192.168.1.99:5555&type=1&page=1
-### Delete SMS
+## Delete SMS
 - Method : `GET`
 * Index : `separated by commas`
 ```
 /delete_sms?port={ip:port}&index={index,index2,index3...}
 ```
 - Example : http://192.168.1.99:8000/api/v1/delete_sms?port=192.168.1.99:5555&index=4000,40001,4002
-### Send USSD
+## Send USSD
 - Method : `GET`
 * Please url encode Cmd data
 ```
 /send_ussd?port={ip:port}&cmd={command}
 ```
 - Example : http://192.168.1.99:8000/api/v1/send_ussd?port=192.168.1.99:5555&cmd=%2A101%23
-### GET Resporn USSD by Port
+## GET Resporn USSD by Port
 - Method : `GET`
 ```
 /get_ussd?port={ip:port}
 ```
 - Example : http://192.168.1.99:8000/api/v1/get_ussd?port=192.168.1.99:5555
-### GET ALL Resporn USSD
+## GET ALL Resporn USSD
 - Method : `GET`
 ```
 /get_ussd?port=all

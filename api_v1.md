@@ -36,7 +36,7 @@
 - Example : http://192.168.1.99:8000/api/v1/reboot_usb?proxy=192.168.1.99:5555
 ### GET all proxy status
 ```
-/status?reboot_usb=all
+/reboot_usb?proxy=all
 ```
 - Example : http://192.168.1.99:8000/api/v1/reboot_usb?proxy=all
 ## Send SMS

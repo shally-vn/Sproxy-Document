@@ -34,7 +34,7 @@
 /reboot_usb?proxy={ip:port}
 ```
 - Example : http://192.168.1.99:8000/api/v1/reboot_usb?proxy=192.168.1.99:5555
-### GET all proxy status
+### Reboot All USB
 ```
 /reboot_usb?proxy=all
 ```

@@ -21,7 +21,7 @@
 ```
 /reset?proxy={ip:port}
 ```
-- Example : http://192.168.1.99:8000/api/v1/reset?proxy=all
+- Example : http://192.168.1.99:8000/api/v1/reset?proxy=192.168.1.99:5555
 ### Renew/change/rotate all proxy port
 ```
 /reset_all
